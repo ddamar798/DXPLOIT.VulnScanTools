@@ -2,8 +2,8 @@ import argparse
 from rich.console import Console
 from .ui_utils import show_banner, confirm_permission
 from .dxplot.mode_manager import get_mode_flags
-from .plugins.xray_plugin import run_xray
-from .parser.xray_parser import parse_xray_output
+from ..plugins.xray_plugin import run_xray
+from ..parser.xray_parser import parse_xray_output
 from .aggregator import aggregate_findings
 from .recommender import recommend
 from .reporter import save_report
