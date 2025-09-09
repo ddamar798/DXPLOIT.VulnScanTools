@@ -1,0 +1,12 @@
+# config.yaml - default config file for DXPLOIT.VulnScan
+tools:
+  xray_path: "xray"   # path or command name
+defaults:
+  mode: "normal"      # normal | silent | brutal
+  timeout: 3600       # seconds per subprocess
+  report_dir: "reports"
+  write_html_report: false
+flags:
+  normal: ["--basic-crawler"]
+  silent: ["--passive"]
+  brutal: ["--advanced-crawler", "--level", "high"]
