@@ -1,4 +1,4 @@
-from dxploit.cli import run_cli
+from dxploit.plugins import cli
 
 if __name__ == "__main__":
-    run_cli()
+    cli.run_cli()
