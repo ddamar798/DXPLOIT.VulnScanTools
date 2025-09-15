@@ -1,12 +1,11 @@
-# config.yaml - default config file for DXPLOIT.VulnScan
 tools:
-  xray_path: "xray"   # path or command name
+  xray_path: "/usr/local/share/xray/xray_linux_amd64"   
+  xray_config_dir: "/usr/local/share/xray"            
 defaults:
-  mode: "normal"      # normal | silent | brutal
-  timeout: 3600       # seconds per subprocess
+  mode: "normal"
+  timeout: 3600
   report_dir: "reports"
-  write_html_report: false
 flags:
   normal: ["--basic-crawler"]
   silent: ["--passive"]
-  brutal: ["--advanced-crawler", "--level", "high"]
+  brutal: ["--browser-crawler","--level","high"]
